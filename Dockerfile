@@ -11,4 +11,9 @@ COPY . .
 
 EXPOSE 6000
 
-CMD ["node", "server.js"]
+COPY ./docker-entry-point.sh /docker-entry-point.sh
+
+RUN chmod +x /docker-entry-point.sh
+
+ENTRYPOINT [ "/docker-entry-point.sh" ]
+# CMD ["node", "server.js"]

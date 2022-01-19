@@ -2,6 +2,8 @@ version: '3'
 services:
   swapi-movies:
     build: .
+    depends_on:
+      - db
     ports:
       - "6000:6000"
     volumes:
@@ -15,8 +17,10 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: star_wars
-      MYSQL_USER: root
-      MYSQL_PASSWORD: example
+    volumes:
+      - mysql-db:/var/lib/mysql
+
+volumes:
+  mysql-db:
 
     
