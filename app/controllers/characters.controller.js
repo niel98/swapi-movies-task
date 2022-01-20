@@ -15,8 +15,6 @@ const getCharacters = asyncHandler(async (req, res) => {
             .json({message: 'sort can only be one of name, gender, height'})
         }
 
-    // const orderBy = req.query.orderBy
-
     const filter = req.query.filter
     if(filter && !['male','female'].includes(filter)){
         return res
