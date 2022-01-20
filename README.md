@@ -1,7 +1,7 @@
 # swapi-movies
 
 # Documentation
-# This is a project that demonstrates RESTful API with Nodejs. This project contains a small set of rest API endpoints using Nodejs that lists the names of star wars movies along with their opening crawls and comment counts, adding and listing anonymous comments for a movie, and getting the character list for a movie.
+## This is a project that demonstrates RESTful API with Nodejs. This project contains a small set of rest API endpoints using Nodejs that lists the names of star wars movies along with their opening crawls and comment counts, adding and listing anonymous comments for a movie, and getting the character list for a movie.
 # You can find the hosted documentation on https://documenter.getpostman.com/view/12205886/UVXnFZ34
 
 # Set Up
